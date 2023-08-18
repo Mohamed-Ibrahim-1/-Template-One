@@ -156,6 +156,7 @@ img .class{
 section.one{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
+    text-transform: capitalize;
 }
 section div.container{
     margin: 0 8%;
@@ -186,6 +187,7 @@ section .feat p{
 /* start section services */
 section.services{
     padding: var(--padding-section);
+    text-transform: capitalize;
 }
 .special-heading{
     color: #ebeced;
@@ -274,6 +276,7 @@ section.services{
 .portfolios{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
+    text-transform: capitalize;
 }
 .portfolios-contact{
     margin: 0 10%;
@@ -330,6 +333,7 @@ section.services{
 /* start about */
 .about{
     padding: var(--padding-section);
+    text-transform: capitalize;
 }
 .about-contact{
     margin: 0 10%;
@@ -409,6 +413,7 @@ section.services{
 section.contact{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
+    text-transform: capitalize;
 }
 .contact-container .info{
     padding-top: var(--padding-section);
