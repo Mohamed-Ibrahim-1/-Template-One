@@ -116,7 +116,7 @@ nav{
     position: absolute;
     width: 100%;
     height: calc(100vh - 65px);
-    background: url(../css/image/bb737003baf97486b94897fedeb779d4.jpg) no-repeat;
+    background: url(../image/bb737003baf97486b94897fedeb779d4.jpg) no-repeat;
     background-size: cover;
     top: 60px;
     left: -200%;
