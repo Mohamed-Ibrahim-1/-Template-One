@@ -4,6 +4,7 @@
     --color2:#2c4755;
     --padding-section:60px;
     --background-color-section:#f6f6f6;
+    --pd: 50px 0;
 }
 *{
     padding: 0;
@@ -113,9 +114,9 @@ header p{
 }
 nav{
     position: absolute;
-    width: 34%;
+    width: 20%;
     height: calc(100vh - 65px);
-    background: url(/image/bb737003baf97486b94897fedeb779d4.jpg) no-repeat;
+    background: url(/bb737003baf97486b94897fedeb779d4.jpg) no-repeat;
     background-size: cover;
     top: 60px;
     left: -100%;
@@ -137,18 +138,11 @@ nav a:hover{
 }
 #xd:checked~nav{
     left: 80%;
-    /* left: 61%;
-    width: 53%; */
+    /* right: 4%; */
 }
 img .class{
     height: calc(100vh - 60px);
 }
-}
-@media (max-width:500px){
-    #xd:checked~nav{
-        left: 61%;
-        width: 53%;
-    }
 }
 /* end header */
 
@@ -157,12 +151,25 @@ section.one{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
 }
+@media (max-width:500px) {
+    section.one{
+        padding: var(--pd);
+
+    }
+}
 section div.container{
     margin: 0 5%;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
     grid-gap: 20px;
+}
+@media (max-width:500px) {
+    section div.container{
+        margin: 0;
+        margin-top: 20px;
+        padding: var(--pd);
+    }
 }
 section .feat{
     padding: 20px;
@@ -186,6 +193,11 @@ section .feat p{
 /* start section services */
 section.services{
     padding: var(--padding-section);
+}
+@media (max-width:500px) {
+    section.services{
+        padding: var(--pd);
+    }
 }
 .special-heading{
     color: #ebeced;
@@ -218,9 +230,22 @@ section.services{
     grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
     grid-gap: 30px;
 }
+@media (max-width:500px){
+    .services .special-contact{
+        margin: 0;
+        margin-top: 100px;
+        padding: var(--pd);
+    }
+}
 .services .special-contact .srv{
     margin-bottom:40px;
     display: flex;
+}
+@media (max-width:500px) {
+    .portfolios .card{
+        margin: 0 auto;
+        margin-bottom:40px;
+    }
 }
 @media (max-width:767px){
     .services .special-contact .srv{
@@ -275,17 +300,35 @@ section.services{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
 }
+@media (max-width:500px) {
+    .portfolios{
+        padding: var(--pd);
+    }
+}
 .portfolios-contact{
     margin: 0 10%;
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
     grid-gap: 30px;
+    padding: 0 47px;
+}
+@media (max-width:500px) {
+    .portfolios-contact{
+        margin: 0;
+        margin-top: 100px;
+        padding: var(--pd);
+    }
 }
 .portfolios .card{
     background-color: #fff;
     width: 230px;
     border-radius: 0 0 30px 0;
+}
+@media (max-width:500px) {
+    .portfolios .card{
+        margin: 0 auto;
+    }
 }
 .portfolios .card img{
     max-width: 100%;
@@ -331,12 +374,23 @@ section.services{
 .about{
     padding: var(--padding-section);
 }
+@media (max-width:500px) {
+    .about{
+        padding: var(--pd);
+    }
+}
 .about-contact{
     margin: 0 10%;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+@media (max-width:500px) {
+    .about-contact{
+        margin: 0;
+        margin-top: 100px;
+    }
 }
 @media(max-width:991px){
     .about-contact{
@@ -409,6 +463,11 @@ section.services{
 section.contact{
     padding: var(--padding-section);
     background-color: var(--background-color-section);
+}
+@media (max-width:500px) {
+    section.contact{
+        padding: var(--pd);
+    }
 }
 .contact-container .info{
     padding-top: var(--padding-section);
