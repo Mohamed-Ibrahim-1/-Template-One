@@ -539,10 +539,11 @@ section.contact{
 footer{
     background-color: var(--color2);
     color: white;
-    padding: var(--padding-section);
+    /* padding: var(--padding-section); */
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: capitalize;
+    padding: 20px 0;
 }
 footer span{
     color: var(--color1);
